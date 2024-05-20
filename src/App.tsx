@@ -1,16 +1,27 @@
 import './App.css';
-import MyCard from "./components/MyCard/MyCard.tsx";
+import CardDeck from "./lib/CardDeck.ts";
 
+
+
+
+let cardDeck = new CardDeck();
+
+const singleCard = cardDeck.getCard();
+console.log(`Извлеченная карта: ${singleCard.rank} ${singleCard.suit}`);
+
+const multipleCards = cardDeck.getCards(5);
+console.log('Извлеченные карты:');
+multipleCards.forEach(card => {
+    console.log(`${card.rank} ${card.suit}`);
+});
 const App = () => {
 
-  return (
-      <div className="playingCards faceImages">
-          <MyCard rank={'J'} suit={'diams'}/>
-          <MyCard rank={'A'} suit={'hearts'}/>
-          <MyCard rank={'7'} suit={'clubs'}/>
-          <MyCard rank={'8'} suit={'spades'}/>
-      </div>
-  );
+
+    return (
+        <div>
+
+        </div>
+    );
 };
 
 export default App;

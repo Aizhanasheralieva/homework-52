@@ -20,5 +20,4 @@ const MyCard: React.FC<Props> = ({ rank, suit }) => {
         </span>
     );
 };
-
 export default MyCard;
