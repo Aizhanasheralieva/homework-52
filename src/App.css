@@ -5,3 +5,33 @@
   text-align: center;
 }
 
+.card {
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100px;
+  text-align: center;
+  font-size: 24px;
+  margin: 10px;
+}
+
+.rank {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.suit.diams {
+  color: red;
+}
+
+.suit.hearts {
+  color: red;
+}
+
+.suit.clubs {
+  color: black;
+}
+
+.suit.spades {
+  color: black;
+}
